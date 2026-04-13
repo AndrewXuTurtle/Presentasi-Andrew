@@ -1086,40 +1086,38 @@
 ══════════════════════════════════════════════ -->
 <section id="s9">
   <div class="container">
-    <span class="overline reveal">USE CASE</span>
-    <h2 class="reveal">Matriks Stakeholder<br>vs Fitur</h2>
+    <span class="overline reveal">USE CASE DIAGRAM</span>
+    <h2 class="reveal">Use Case Diagram</h2>
+    <p class="lead reveal">3 Actor · 17 Use Case · Relasi Include &amp; Extend</p>
 
-    <div style="overflow-x: auto;" class="reveal">
-      <table class="uc-table">
-        <thead>
-          <tr>
-            <th>Use Case</th>
-            <th>✈️ Wisatawan</th>
-            <th>🏪 Pelaku Usaha</th>
-            <th>👨‍💻 Admin</th>
-            <th>🏛️ Dinas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Registrasi & Login</td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Lihat Katalog</td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
-          <tr><td>Filter & Pencarian</td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Beli Tiket / Paket</td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Pembayaran Online</td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Daftarkan Venue</td><td><span class="dash">—</span></td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Kelola Venue</td><td><span class="dash">—</span></td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
-          <tr><td>Verifikasi Venue</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
-          <tr><td>Dashboard & Laporan</td><td><span class="dash">—</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
-          <tr><td>Notifikasi Otomatis</td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
-          <tr><td>Review & Rating</td><td><span class="check">✅</span></td><td><span class="dash">—</span></td><td>Mod.</td><td><span class="dash">—</span></td></tr>
-        </tbody>
-      </table>
+    <div class="reveal" style="display:flex;justify-content:center;margin-top:32px;">
+      <img src="usecase.png" alt="Use Case Diagram Smart Tourism Batam"
+           style="max-width:560px;width:100%;height:auto;border-radius:16px;border:2px solid var(--border);">
     </div>
 
-    <div class="flex-center gap-16 flex-wrap mt-24 reveal">
-      <span class="badge badge-g">✅ Primary Actor</span>
-      <span class="badge badge-y">Mod. = Moderator</span>
-      <span class="badge badge-s">— = Tidak Terlibat</span>
+    <!-- 3 Actor Legend -->
+    <div class="icon-grid mt-32" style="grid-template-columns:repeat(3,1fr);">
+      <div class="icon-card reveal" style="padding:24px;">
+        <span class="emoji">✈️</span>
+        <h3 style="font-size:18px;">Wisatawan</h3>
+        <p style="font-size:13px;">Lihat katalog, booking, bayar, review</p>
+      </div>
+      <div class="icon-card reveal reveal-d1" style="padding:24px;">
+        <span class="emoji">🏪</span>
+        <h3 style="font-size:18px;">Pelaku Usaha</h3>
+        <p style="font-size:13px;">Daftar venue, kelola, lihat booking masuk</p>
+      </div>
+      <div class="icon-card reveal reveal-d2" style="padding:24px;">
+        <span class="emoji">👨💻</span>
+        <h3 style="font-size:18px;">Admin Sistem</h3>
+        <p style="font-size:13px;">Verifikasi venue, kelola data, dashboard</p>
+      </div>
+    </div>
+
+    <!-- Key relationships -->
+    <div class="mt-24 reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <div class="info-pill"><span class="emoji">📌</span> <strong style="color:var(--primary);">include</strong> = wajib masuk (wajib dilakukan bersama)</div>
+      <div class="info-pill"><span class="emoji">📌</span> <strong style="color:var(--accent);">extend</strong> = perluwhen (dilakukan saat kondisi tertentu)</div>
     </div>
   </div>
 </section>
@@ -1127,9 +1125,51 @@
 <div class="divider"></div>
 
 <!-- ══════════════════════════════════════════════
-     S10 · CLOSING
+     S10 · ACTIVITY DIAGRAM
 ══════════════════════════════════════════════ -->
 <section id="s10">
+  <div class="container">
+    <span class="overline reveal">ACTIVITY DIAGRAM</span>
+    <h2 class="reveal">Activity Diagram</h2>
+    <p class="lead reveal">Alur interaksi utama sistem — dari login hingga review.</p>
+
+    <div class="reveal" style="display:flex;justify-content:center;margin-top:32px;">
+      <img src="activity.png" alt="Activity Diagram Smart Tourism Batam"
+           style="max-width:800px;width:100%;height:auto;border-radius:16px;border:2px solid var(--border);">
+    </div>
+
+    <!-- Swimlane summary -->
+    <div class="icon-grid mt-32" style="grid-template-columns:repeat(4,1fr);">
+      <div class="icon-card reveal" style="padding:20px;">
+        <span class="emoji">🔐</span>
+        <h3 style="font-size:16px;">Login</h3>
+        <p style="font-size:12px;">Validasi kredensial, grant access</p>
+      </div>
+      <div class="icon-card reveal reveal-d1" style="padding:20px;">
+        <span class="emoji">🔍</span>
+        <h3 style="font-size:16px;">Discovery</h3>
+        <p style="font-size:12px;">Cari, filter, lihat detail destinasi</p>
+      </div>
+      <div class="icon-card reveal reveal-d2" style="padding:20px;">
+        <span class="emoji">💳</span>
+        <h3 style="font-size:16px;">Transaksi</h3>
+        <p style="font-size:12px;">Booking, kuota, pembayaran, e-ticket</p>
+      </div>
+      <div class="icon-card reveal reveal-d3" style="padding:20px;">
+        <span class="emoji">⭐</span>
+        <h3 style="font-size:16px;">Review</h3>
+        <p style="font-size:12px;">Rating, simpan, selesai</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════
+     S11 · CLOSING
+══════════════════════════════════════════════ -->
+<section id="s11">
   <div class="container text-center">
     <span class="overline reveal">RINGKASAN</span>
     <h2 class="reveal" style="font-size:clamp(36px,6vw,72px);">Smart Tourism Batam</h2>
@@ -1190,7 +1230,7 @@ document.querySelectorAll('.nfr-list').forEach(el => nfrObs.observe(el));
 
 // Nav dots
 const sections = document.querySelectorAll('section');
-const labels = ['Hero', 'Stakeholder', 'Masalah', 'FR', 'NFR', 'Flow Venue', 'Flow Tourist', 'Arsitektur', 'Use Case', 'Ringkasan'];
+const labels = ['Hero', 'Stakeholder', 'Masalah', 'FR', 'NFR', 'Flow Venue', 'Flow Tourist', 'Arsitektur', 'Use Case', 'Activity', 'Ringkasan'];
 const nav = document.getElementById('navDots');
 sections.forEach((s, i) => {
   const d = document.createElement('div');
