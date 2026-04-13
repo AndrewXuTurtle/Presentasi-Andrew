@@ -199,6 +199,36 @@
   .decision-node .icon { font-size: 32px; display: block; margin-bottom: 8px; }
   .decision-node .title { font-size: 15px; font-weight: 700; color: var(--accent); }
 
+  .diamond {
+    background: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    padding: 14px 20px;
+    text-align: center;
+    transform: rotate(0deg);
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .diamond .diam-title { font-size: 13px; font-weight: 700; color: var(--bg); }
+  .diamond .diam-sub { font-size: 11px; color: var(--bg); opacity: 0.8; }
+
+  .fail-node {
+    background: #ef444422;
+    border: 2px solid var(--danger);
+    border-radius: 12px;
+    padding: 14px 20px;
+    text-align: center;
+    min-width: 160px;
+  }
+  .fail-node .icon { font-size: 28px; display: block; margin-bottom: 6px; }
+  .fail-node .title { font-size: 14px; font-weight: 700; color: var(--danger); }
+
+  .subflow { margin-top: 12px; }
+  .subflow-label { font-size: 12px; color: var(--text-dim); margin: 8px 0 4px 0; text-align: center; font-style: italic; }
+
   /* ——— VISUAL CARD GRID ——— */
   .visual-grid {
     display: grid;
@@ -695,7 +725,7 @@
 <section id="s5">
   <div class="container">
     <span class="overline reveal">NON-FUNCTIONAL REQUIREMENTS</span>
-    <h2 class="reveal">8 Standar Kualitas</h2>
+    <h2 class="reveal">6 Standar Kualitas</h2>
 
     <div class="nfr-list">
       <div class="nfr-item reveal">
@@ -728,16 +758,6 @@
         <div class="nfr-bar"><div class="nfr-fill" data-w="88%"></div></div>
         <div class="nfr-val">MUSIM LIBUR</div>
       </div>
-      <div class="nfr-item reveal reveal-d2">
-        <div class="nfr-label">RELIABILITY</div>
-        <div class="nfr-bar"><div class="nfr-fill" data-w="96%"></div></div>
-        <div class="nfr-val">NO DUPLIKAT</div>
-      </div>
-      <div class="nfr-item reveal reveal-d3">
-        <div class="nfr-label">MAINTAIN.</div>
-        <div class="nfr-bar"><div class="nfr-fill" data-w="85%"></div></div>
-        <div class="nfr-val">MODULAR</div>
-      </div>
     </div>
   </div>
 </section>
@@ -750,25 +770,54 @@
 <section id="s6">
   <div class="container">
     <span class="overline reveal">ALUR SISTEM #1</span>
-    <h2 class="reveal">Pendaftaran Venue</h2>
-    <p class="lead reveal">Dari pelaku usaha daftar → admin verifikasi → venue aktif di katalog.</p>
+    <h2 class="reveal">Pelaku Usaha (Venue Owner)</h2>
+    <p class="lead reveal">Login → Daftar Venue → Verifikasi Admin → Kelola &amp; Operasi.</p>
 
     <div class="flow-row reveal">
       <div class="flow-node">
-        <span class="icon">📝</span>
-        <div class="title">Buat Akun Mitra</div>
+        <span class="icon">🔐</span>
+        <div class="title">Login</div>
+        <div class="sub">Email &amp; password</div>
       </div>
       <span class="flow-arrow">→</span>
       <div class="flow-node">
-        <span class="icon">🏪</span>
-        <div class="title">Isi Form Venue</div>
-        <div class="sub">Profil, lokasi, harga, foto</div>
+        <span class="icon">📊</span>
+        <div class="title">Venue Owner Dashboard</div>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-node">
+        <span class="icon">📝</span>
+        <div class="title">Register Venue</div>
+        <div class="sub">Isi data lengkap venue</div>
       </div>
       <span class="flow-arrow">→</span>
       <div class="flow-node">
         <span class="icon">⏳</span>
         <div class="title">Menunggu Verifikasi</div>
-        <div class="sub">Masuk panel admin</div>
+        <div class="sub">Admin meninjau</div>
+      </div>
+    </div>
+
+    <div class="flow-arrow-down">↓</div>
+
+    <div class="flow-row reveal">
+      <div class="decision-node">
+        <span class="icon">⚖️</span>
+        <div class="title">Data Valid?</div>
+      </div>
+    </div>
+
+    <div class="flow-row reveal" style="gap:8px;">
+      <div class="flow-node" style="border-color:var(--danger);">
+        <span class="icon">❌</span>
+        <div class="title">Ditolak / Revisi</div>
+        <div class="sub">Terima catatan → perbaiki &amp; resubmit</div>
+      </div>
+      <span class="flow-arrow">✅→</span>
+      <div class="flow-node" style="border-color:var(--success);">
+        <span class="icon">✅</span>
+        <div class="title">Venue Aktif!</div>
+        <div class="sub">Tampil di katalog publik</div>
       </div>
     </div>
 
@@ -776,44 +825,25 @@
 
     <div class="flow-row reveal">
       <div class="flow-node">
-        <span class="icon">👨‍💻</span>
-        <div class="title">Admin Meninjau</div>
+        <span class="icon">⚙️</span>
+        <div class="title">Kelola Venue</div>
+        <div class="sub">Data, tiket, paket, kuota, jadwal</div>
       </div>
       <span class="flow-arrow">→</span>
-      <div class="decision-node">
-        <span class="icon">⚖️</span>
-        <div class="title">APPROVE / REVISI / TOLAK</div>
+      <div class="flow-node">
+        <span class="icon">📋</span>
+        <div class="title">Lihat Booking Masuk</div>
       </div>
       <span class="flow-arrow">→</span>
-      <div class="flow-node" style="border-color: var(--success);">
+      <div class="flow-node">
         <span class="icon">✅</span>
-        <div class="title">Venue Aktif!</div>
-        <div class="sub">Tampil di katalog publik</div>
+        <div class="title">Konfirmasi Kesiapan</div>
       </div>
-    </div>
-
-    <div class="flow-arrow-down" style="color: var(--danger);">↓</div>
-
-    <div class="flow-row reveal">
-      <div class="flow-node" style="border-color: var(--danger); border-style: dashed;">
-        <span class="icon">🔄</span>
-        <div class="title">Revisi / Ditolak</div>
-        <div class="sub">Notifikasi → pelaku usaha perbaiki & resubmit</div>
-      </div>
-    </div>
-
-    <div class="big-stats mt-48">
-      <div class="big-stat reveal" style="border-color: var(--primary);">
-        <div class="num" style="font-size:40px;">📋</div>
-        <div class="label">Data Lengkap</div>
-      </div>
-      <div class="big-stat reveal reveal-d1" style="border-color: var(--accent);">
-        <div class="num" style="font-size:40px;">🔍</div>
-        <div class="label">Verifikasi Admin</div>
-      </div>
-      <div class="big-stat reveal reveal-d2" style="border-color: var(--success);">
-        <div class="num" style="font-size:40px;">✅</div>
-        <div class="label">Venue Valid</div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-node">
+        <span class="icon">📊</span>
+        <div class="title">Laporan Venue</div>
+        <div class="sub">Report penjualan</div>
       </div>
     </div>
   </div>
@@ -827,51 +857,127 @@
 <section id="s7">
   <div class="container">
     <span class="overline reveal">ALUR SISTEM #2</span>
-    <h2 class="reveal">Alur Wisatawan</h2>
-    <p class="lead reveal">Dari buka aplikasi → booking → dapat e-ticket.</p>
+    <h2 class="reveal">Wisatawan (Tourist)</h2>
+    <p class="lead reveal">Login → Jelajah → Booking → Bayar → E-Ticket → Review.</p>
 
     <div class="flow-row reveal">
       <div class="flow-node">
+        <span class="icon">🔐</span>
+        <div class="title">Login</div>
+        <div class="sub">Email &amp; password</div>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-node">
         <span class="icon">🚀</span>
-        <div class="title">Buka Aplikasi</div>
+        <div class="title">Tourist Dashboard</div>
       </div>
       <span class="flow-arrow">→</span>
       <div class="flow-node">
         <span class="icon">🔍</span>
-        <div class="title">Cari & Filter</div>
-        <div class="sub">Lokasi, jenis, harga</div>
+        <div class="title">Cari &amp; Filter</div>
+        <div class="sub">Lokasi, jenis, harga, rating</div>
       </div>
       <span class="flow-arrow">→</span>
-      <div class="flow-node" style="border-color: var(--primary);">
+      <div class="flow-node" style="border-color:var(--primary);">
         <span class="icon">📍</span>
         <div class="title">Lihat Detail</div>
-        <div class="sub">Foto, harga, jam, peta</div>
-      </div>
-      <span class="flow-arrow">→</span>
-      <div class="flow-node">
-        <span class="icon">📦</span>
-        <div class="title">Pilih Paket</div>
-        <div class="sub">Tentukan tanggal & peserta</div>
+        <div class="sub">Foto, harga, jam, peta, review</div>
       </div>
     </div>
 
     <div class="flow-arrow-down">↓</div>
 
     <div class="flow-row reveal">
-      <div class="flow-node" style="border-color: var(--success);">
-        <span class="icon">💳</span>
-        <div class="title">Bayar Online</div>
-        <div class="sub">Payment Gateway</div>
-      </div>
-      <span class="flow-arrow">→</span>
-      <div class="flow-node" style="border-color: var(--accent);">
-        <span class="icon">🎫</span>
-        <div class="title">E-Ticket</div>
-        <div class="sub">Digital proof → tunjukkan saat datang</div>
+      <div class="decision-node">
+        <span class="icon">❓</span>
+        <div class="title">Ingin Booking?</div>
       </div>
     </div>
 
-    <h3 class="mt-48 reveal">🎟️ Produk yang Dijual</h3>
+    <div class="flow-row reveal" style="gap:8px;">
+      <span class="flow-arrow">Tidak →</span>
+      <div class="flow-node" style="border-color:var(--text-dim);">
+        <span class="icon">🔍</span>
+        <div class="title">Kembali ke Jelajah</div>
+      </div>
+      <span class="flow-arrow" style="color:var(--success);">Ya ↓</span>
+      <div class="flow-node">
+        <span class="icon">📦</span>
+        <div class="title">Input Data Booking</div>
+        <div class="sub">Tanggal &amp; jumlah peserta</div>
+      </div>
+    </div>
+
+    <div class="flow-arrow-down">↓</div>
+
+    <div class="flow-row reveal">
+      <div class="decision-node">
+        <span class="icon">📊</span>
+        <div class="title">Kuota Tersedia?</div>
+      </div>
+    </div>
+
+    <div class="flow-row reveal" style="gap:8px;">
+      <div class="flow-node" style="border-color:var(--danger);">
+        <span class="icon">❌</span>
+        <div class="title">Kuota Penuh</div>
+        <div class="sub">Pilih tanggal/venue lain</div>
+      </div>
+      <span class="flow-arrow" style="color:var(--success);">✅→</span>
+      <div class="flow-node">
+        <span class="icon">💳</span>
+        <div class="title">Konfirmasi &amp; Bayar</div>
+        <div class="sub">Pilih metode pembayaran</div>
+      </div>
+    </div>
+
+    <div class="flow-arrow-down">↓</div>
+
+    <div class="flow-row reveal">
+      <div class="decision-node">
+        <span class="icon">✅</span>
+        <div class="title">Pembayaran Berhasil?</div>
+      </div>
+    </div>
+
+    <div class="flow-row reveal" style="gap:8px;">
+      <div class="flow-node" style="border-color:var(--danger);">
+        <span class="icon">❌</span>
+        <div class="title">Pembayaran Gagal</div>
+        <div class="sub">Coba lagi</div>
+      </div>
+      <span class="flow-arrow" style="color:var(--success);">✅→</span>
+      <div class="flow-node" style="border-color:var(--success);">
+        <span class="icon">🎫</span>
+        <div class="title">E-Ticket</div>
+        <div class="sub">Terima invoice &amp; e-ticket</div>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-node">
+        <span class="icon">📜</span>
+        <div class="title">Riwayat Booking</div>
+      </div>
+    </div>
+
+    <div class="flow-arrow-down">↓</div>
+
+    <div class="flow-row reveal">
+      <div class="decision-node">
+        <span class="icon">🏁</span>
+        <div class="title">Kunjungan Selesai?</div>
+      </div>
+    </div>
+
+    <div class="flow-row reveal" style="gap:8px;">
+      <span class="flow-arrow" style="color:var(--success);">Ya ↓</span>
+      <div class="flow-node" style="border-color:var(--accent);">
+        <span class="icon">⭐</span>
+        <div class="title">Review &amp; Rating</div>
+        <div class="sub">Simpan ke sistem</div>
+      </div>
+    </div>
+
+<h3 class="mt-48 reveal">🎟️ Produk yang Dijual</h3><h3 class="mt-48 reveal">🎟️ Produk yang Dijual</h3>
     <div class="pack-row reveal">
       <div class="pack">
         <span class="icon">🎟️</span>
