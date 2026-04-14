@@ -1,0 +1,2409 @@
+{
+  "nodes": [
+    {
+      "id": "note_0",
+      "name": "2026-03-26",
+      "file": "memory/2026-03-26.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 12,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_1",
+      "name": "2026-03-22",
+      "file": "memory/2026-03-22.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_2",
+      "name": "2026-03-23",
+      "file": "memory/2026-03-23.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 4,
+        "project": 2,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_3",
+      "name": "2026-04-11-whisper-local-cost",
+      "file": "memory/2026-04-11-whisper-local-cost.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 3,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_4",
+      "name": "2026-03-27",
+      "file": "memory/2026-03-27.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 12,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_5",
+      "name": "2026-04-13-smart-tourism-batam",
+      "file": "memory/2026-04-13-smart-tourism-batam.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 4,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_6",
+      "name": "2026-04-13",
+      "file": "memory/2026-04-13.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 5,
+        "date": 2,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_7",
+      "name": "2026-04-10-github-trending-steals",
+      "file": "memory/2026-04-10-github-trending-steals.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 3,
+        "date": 2,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_8",
+      "name": "openclaw-money-iterations",
+      "file": "memory/openclaw-money-iterations.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_9",
+      "name": "2026-04-01",
+      "file": "memory/2026-04-01.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_10",
+      "name": "2026-04-13-session-start",
+      "file": "memory/2026-04-13-session-start.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_11",
+      "name": "2026-04-11",
+      "file": "memory/2026-04-11.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_12",
+      "name": "2026-04-09-0807",
+      "file": "memory/2026-04-09-0807.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 4,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_13",
+      "name": "2026-04-05-gateway-restart",
+      "file": "memory/2026-04-05-gateway-restart.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_14",
+      "name": "2026-04-14",
+      "file": "memory/2026-04-14.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_15",
+      "name": "2026-03-30",
+      "file": "memory/2026-03-30.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_16",
+      "name": "2026-04-13-0600",
+      "file": "memory/2026-04-13-0600.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_17",
+      "name": "2026-04-05-1128",
+      "file": "memory/2026-04-05-1128.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_18",
+      "name": "2026-04-09-new-session",
+      "file": "memory/2026-04-09-new-session.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 1,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_19",
+      "name": "2026-04-05-1129",
+      "file": "memory/2026-04-05-1129.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_20",
+      "name": "2026-03-25",
+      "file": "memory/2026-03-25.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 8,
+        "project": 4,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_21",
+      "name": "claude-code-steal-list",
+      "file": "notes/claude-code-steal-list.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_22",
+      "name": "claude-code-skills-memory",
+      "file": "notes/claude-code-skills-memory.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_23",
+      "name": "10-hermes-deep",
+      "file": "notes/10-hermes-deep.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_24",
+      "name": "50-implementation-log",
+      "file": "notes/50-implementation-log.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_25",
+      "name": "skill-checklist",
+      "file": "notes/skill-checklist.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_26",
+      "name": "learn-after-task",
+      "file": "notes/learn-after-task.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_27",
+      "name": "00-repo-map",
+      "file": "notes/00-repo-map.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_28",
+      "name": "20-autoresearch-deep",
+      "file": "notes/20-autoresearch-deep.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_29",
+      "name": "claude-code-adaptations",
+      "file": "notes/claude-code-adaptations.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_30",
+      "name": "task-gates",
+      "file": "notes/task-gates.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_31",
+      "name": "trajectory-log",
+      "file": "notes/trajectory-log.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_32",
+      "name": "skill-template",
+      "file": "notes/skill-template.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_33",
+      "name": "agentscope-concepts",
+      "file": "notes/agentscope-concepts.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_34",
+      "name": "claude-code-deepdive",
+      "file": "notes/claude-code-deepdive.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_35",
+      "name": "superpowers-concepts",
+      "file": "notes/superpowers-concepts.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 6,
+      "entities": {
+        "person": 0,
+        "project": 0,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_36",
+      "name": "40-openclaw-upgrade-playbook",
+      "file": "notes/40-openclaw-upgrade-playbook.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_37",
+      "name": "30-diff-and-delta",
+      "file": "notes/30-diff-and-delta.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 0,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_38",
+      "name": "2026-04-03",
+      "file": "notes/github-learner/2026-04-03.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_39",
+      "name": "2026-04-13",
+      "file": "notes/github-learner/2026-04-13.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_40",
+      "name": "2026-04-12",
+      "file": "notes/github-learner/2026-04-12.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_41",
+      "name": "2026-04-05",
+      "file": "notes/github-learner/2026-04-05.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 2,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_42",
+      "name": "2026-04-01",
+      "file": "notes/github-learner/2026-04-01.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_43",
+      "name": "2026-04-11",
+      "file": "notes/github-learner/2026-04-11.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_44",
+      "name": "2026-04-10",
+      "file": "notes/github-learner/2026-04-10.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "note_45",
+      "name": "2026-04-04",
+      "file": "notes/github-learner/2026-04-04.md",
+      "type": "note",
+      "color": "#1e293b",
+      "size": 24,
+      "entities": {
+        "person": 0,
+        "project": 1,
+        "date": 1,
+        "topic": 0
+      }
+    },
+    {
+      "id": "entity:INFOVG",
+      "name": "INFOVG",
+      "type": "project",
+      "color": "#10b981",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:BRU",
+      "name": "BRU",
+      "type": "project",
+      "color": "#10b981",
+      "size": 12,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-03-26",
+      "name": "2026-03-26",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-03-22",
+      "name": "2026-03-22",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Zenius",
+      "name": "Zenius",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Andrew",
+      "name": "Andrew",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 22,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Kesya",
+      "name": "Kesya",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Anjaly",
+      "name": "Anjaly",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Mac mini",
+      "name": "Mac mini",
+      "type": "project",
+      "color": "#10b981",
+      "size": 16,
+      "isEntity": true
+    },
+    {
+      "id": "entity:WhatsApp",
+      "name": "WhatsApp",
+      "type": "project",
+      "color": "#10b981",
+      "size": 14,
+      "isEntity": true
+    },
+    {
+      "id": "entity:OpenClaw",
+      "name": "OpenClaw",
+      "type": "project",
+      "color": "#10b981",
+      "size": 28,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Telegram",
+      "name": "Telegram",
+      "type": "project",
+      "color": "#10b981",
+      "size": 28,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-11",
+      "name": "2026-04-11",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 12,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Coretax",
+      "name": "Coretax",
+      "type": "project",
+      "color": "#10b981",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-03-27",
+      "name": "2026-03-27",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Barelang",
+      "name": "Barelang",
+      "type": "project",
+      "color": "#10b981",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Smart Tourism",
+      "name": "Smart Tourism",
+      "type": "project",
+      "color": "#10b981",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-13",
+      "name": "2026-04-13",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 16,
+      "isEntity": true
+    },
+    {
+      "id": "entity:MiniMax",
+      "name": "MiniMax",
+      "type": "project",
+      "color": "#10b981",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:GitHub",
+      "name": "GitHub",
+      "type": "project",
+      "color": "#10b981",
+      "size": 28,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-12",
+      "name": "2026-04-12",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-10",
+      "name": "2026-04-10",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 10,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-09",
+      "name": "2026-04-09",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 12,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-03-30",
+      "name": "2026-03-30",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-06",
+      "name": "2026-04-06",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-08",
+      "name": "2026-04-08",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-07",
+      "name": "2026-04-07",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-05",
+      "name": "2026-04-05",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 14,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-14",
+      "name": "2026-04-14",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Ley",
+      "name": "Ley",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Suhe",
+      "name": "Suhe",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Leydea",
+      "name": "Leydea",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:Darren",
+      "name": "Darren",
+      "type": "person",
+      "color": "#f59e0b",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-03-31",
+      "name": "2026-03-31",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-03",
+      "name": "2026-04-03",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-01",
+      "name": "2026-04-01",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    },
+    {
+      "id": "entity:2026-04-04",
+      "name": "2026-04-04",
+      "type": "date",
+      "color": "#7c3aed",
+      "size": 8,
+      "isEntity": true
+    }
+  ],
+  "links": [
+    {
+      "source": "note_0",
+      "target": "note_20",
+      "entity": "INFOVG",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_0",
+      "target": "note_4",
+      "entity": "BRU",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_4",
+      "target": "note_20",
+      "entity": "BRU",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_2",
+      "target": "note_20",
+      "entity": "Zenius",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_3",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_5",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_6",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_7",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_11",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_5",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_6",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_7",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_11",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_3",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_5",
+      "target": "note_6",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_5",
+      "target": "note_7",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_5",
+      "target": "note_11",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_5",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_5",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_6",
+      "target": "note_7",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_6",
+      "target": "note_11",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_6",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_6",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_7",
+      "target": "note_11",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_7",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_7",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_11",
+      "target": "note_18",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_11",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_18",
+      "target": "note_20",
+      "entity": "Andrew",
+      "type": "person",
+      "color": "#f59e0b"
+    },
+    {
+      "source": "note_2",
+      "target": "note_12",
+      "entity": "Mac mini",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_12",
+      "entity": "Mac mini",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_12",
+      "entity": "Mac mini",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_12",
+      "entity": "Mac mini",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_8",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_13",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_24",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_8",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_13",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_24",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_13",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_20",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_24",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_20",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_24",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_24",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_20",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_28",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_28",
+      "target": "note_36",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_28",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_28",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_28",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_36",
+      "target": "note_37",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_36",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_36",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_37",
+      "target": "note_39",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_37",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_40",
+      "entity": "OpenClaw",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_10",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_10",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_12",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_5",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_8",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_10",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_13",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_8",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_10",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_13",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_10",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_12",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_8",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_12",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_13",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_10",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_13",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_12",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_16",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_13",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_16",
+      "target": "note_17",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_16",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_16",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_16",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_16",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_17",
+      "target": "note_18",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_17",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_17",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_17",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_18",
+      "target": "note_19",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_18",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_18",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_19",
+      "target": "note_37",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_19",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_37",
+      "target": "note_41",
+      "entity": "Telegram",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_3",
+      "target": "note_43",
+      "entity": "2026-04-11",
+      "type": "date",
+      "color": "#7c3aed"
+    },
+    {
+      "source": "note_11",
+      "target": "note_43",
+      "entity": "2026-04-11",
+      "type": "date",
+      "color": "#7c3aed"
+    },
+    {
+      "source": "note_6",
+      "target": "note_39",
+      "entity": "2026-04-13",
+      "type": "date",
+      "color": "#7c3aed"
+    },
+    {
+      "source": "note_10",
+      "target": "note_39",
+      "entity": "2026-04-13",
+      "type": "date",
+      "color": "#7c3aed"
+    },
+    {
+      "source": "note_16",
+      "target": "note_39",
+      "entity": "2026-04-13",
+      "type": "date",
+      "color": "#7c3aed"
+    },
+    {
+      "source": "note_6",
+      "target": "note_24",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_38",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_40",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_6",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_24",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_38",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_39",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_40",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_7",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_38",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_41",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_24",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_39",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_40",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_41",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_38",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_41",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_39",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_40",
+      "target": "note_41",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_40",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_40",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_40",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_40",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_41",
+      "target": "note_42",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_41",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_41",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_41",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_42",
+      "target": "note_43",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_42",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_42",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_43",
+      "target": "note_44",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_43",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    },
+    {
+      "source": "note_44",
+      "target": "note_45",
+      "entity": "GitHub",
+      "type": "project",
+      "color": "#10b981"
+    }
+  ]
+}

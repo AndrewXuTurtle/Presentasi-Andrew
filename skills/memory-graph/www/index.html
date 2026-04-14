@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Graph — Andrew Xu</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: #0a0e1a;
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+  }
+  #graph { width: 100vw; height: 100vh; }
+  .nodetext { font-size: 11px; fill: #94a3b8; pointer-events: none; text-anchor: middle; }
+  .link { stroke-opacity: 0.4; stroke-width: 1px; fill: none; }
+  .node circle { stroke-width: 2px; cursor: pointer; }
+  .tooltip {
+    position: fixed;
+    background: #1a2235;
+    border: 1px solid #00f0ff44;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #e2e8f0;
+    pointer-events: none;
+    display: none;
+    z-index: 10;
+    max-width: 240px;
+    box-shadow: 0 0 20px #00f0ff22;
+  }
+  .tooltip .tip-name { font-weight: 700; color: #00f0ff; font-size: 14px; margin-bottom: 4px; }
+  .tooltip .tip-meta { font-size: 11px; color: #64748b; margin-bottom: 6px; }
+  .tooltip .tip-entities { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tooltip .tag { background: #00f0ff22; color: #00f0ff; padding: 2px 8px; border-radius: 20px; font-size: 11px; }
+  .sidebar {
+    position: fixed; top: 20px; left: 20px; z-index: 5;
+    background: #111827ee; border: 1px solid #1e293b;
+    border-radius: 14px; padding: 20px; width: 260px;
+    backdrop-filter: blur(10px);
+  }
+  .sidebar h2 { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #00f0ff; letter-spacing: 2px; margin-bottom: 12px; }
+  .sidebar .stat { display: flex; justify-content: space-between; padding: 5px 0; font-size: 13px; border-bottom: 1px solid #1e293b; }
+  .sidebar .stat span { color: #94a3b8; }
+  .sidebar .stat strong { color: #fff; }
+  .legend { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #94a3b8; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .title-bar {
+    position: fixed; top: 20px; right: 20px; z-index: 5;
+    background: #111827ee; border: 1px solid #1e293b;
+    border-radius: 14px; padding: 14px 20px;
+    backdrop-filter: blur(10px); text-align: right;
+  }
+  .title-bar h1 { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #00f0ff; letter-spacing: 1px; }
+  .title-bar p { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .controls {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    z-index: 5; background: #111827ee; border: 1px solid #1e293b;
+    border-radius: 100px; padding: 8px 20px;
+    backdrop-filter: blur(10px); display: flex; gap: 12px; align-items: center;
+  }
+  .controls button {
+    background: #1a2235; border: 1px solid #1e293b; color: #e2e8f0;
+    border-radius: 8px; padding: 6px 14px; font-size: 12px; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .controls button:hover { border-color: #00f0ff; color: #00f0ff; }
+  .loading {
+    position: fixed; inset: 0; display: flex; align-items: center;
+    justify-content: center; flex-direction: column; gap: 16px; z-index: 20;
+    background: #0a0e1a;
+  }
+  .loading-spinner { width: 40px; height: 40px; border: 3px solid #1e293b; border-top-color: #00f0ff; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading p { color: #64748b; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="loading" id="loading">
+  <div class="loading-spinner"></div>
+  <p>Mapping your memory...</p>
+</div>
+
+<div class="sidebar" id="sidebar" style="display:none;">
+  <h2>MEMORY GRAPH</h2>
+  <div class="stat"><span>Notes</span><strong id="noteCount">0</strong></div>
+  <div class="stat"><span>Connections</span><strong id="linkCount">0</strong></div>
+  <div class="stat"><span>People</span><strong id="personCount">0</strong></div>
+  <div class="stat"><span>Projects</span><strong id="projectCount">0</strong></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#00f0ff"></div> Note</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> Person</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div> Project</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div> Date</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Topic</div>
+  </div>
+</div>
+
+<div class="title-bar">
+  <h1>Memory Graph</h1>
+  <p>Andrew Xu · Force-directed knowledge map</p>
+</div>
+
+<div class="controls">
+  <button onclick="zoomIn()">🔍+</button>
+  <button onclick="zoomOut()">🔍-</button>
+  <button onclick="resetZoom()">⟲ Reset</button>
+  <button onclick="toggleLabels()">🏷 Toggle Labels</button>
+  <button onclick="focusPeople()">👥 People</button>
+  <button onclick="focusProjects()">📁 Projects</button>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<svg id="graph"></svg>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+let nodes, links, svg, simulation, g;
+let labelsVisible = true;
+let transform = d3.zoomIdentity;
+
+const w = window.innerWidth, h = window.innerHeight;
+
+svg = d3.select("#graph")
+  .attr("width", w).attr("height", h);
+
+g = svg.append("g");
+
+const zoom = d3.zoom()
+  .scaleExtent([0.1, 4])
+  .on("zoom", (event) => {
+    transform = event.transform;
+    g.attr("transform", event.transform);
+  });
+
+svg.call(zoom);
+
+const tooltip = document.getElementById("tooltip");
+const sidebar = document.getElementById("sidebar");
+
+fetch("graph-data.json")
+  .then(r => r.json())
+  .then(data => {
+    nodes = data.nodes;
+    links = data.links;
+
+    document.getElementById("noteCount").textContent = nodes.filter(n => !n.isEntity).length;
+    document.getElementById("linkCount").textContent = links.length;
+    document.getElementById("personCount").textContent = nodes.filter(n => n.type === "person").length;
+    document.getElementById("projectCount").textContent = nodes.filter(n => n.type === "project").length;
+
+    document.getElementById("loading").style.display = "none";
+    sidebar.style.display = "block";
+
+    renderGraph();
+  })
+  .catch(() => {
+    document.querySelector(".loading p").textContent = "No graph data. Run generate_graph.py first.";
+  });
+
+function renderGraph() {
+  simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(80).strength(0.3))
+    .force("charge", d3.forceManyBody().strength(-200))
+    .force("center", d3.forceCenter(w/2, h/2))
+    .force("collide", d3.forceCollide().radius(d => (d.size || 8) + 8));
+
+  const link = g.append("g")
+    .selectAll("line")
+    .data(links)
+    .enter().append("line")
+    .attr("class", "link")
+    .attr("stroke", d => d.color || "#00f0ff")
+    .on("mouseover", function(event, d) {
+      d3.select(this).attr("stroke-opacity", 1).attr("stroke-width", 2);
+    })
+    .on("mouseout", function() {
+      d3.select(this).attr("stroke-opacity", 0.4).attr("stroke-width", 1);
+    });
+
+  const node = g.append("g")
+    .selectAll("g")
+    .data(nodes)
+    .enter().append("g")
+    .call(d3.drag()
+      .on("start", (event, d) => {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x; d.fy = d.y;
+      })
+      .on("drag", (event, d) => { d.fx = event.x; d.fy = event.y; })
+      .on("end", (event, d) => {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null; d.fy = null;
+      }));
+
+  node.append("circle")
+    .attr("r", d => d.size || 8)
+    .attr("fill", d => d.color || "#1e293b")
+    .attr("stroke", d => d.color || "#00f0ff")
+    .style("fill-opacity", d => d.isEntity ? 0.7 : 0.4)
+    .on("mouseover", (event, d) => showTooltip(event, d))
+    .on("mouseout", () => tooltip.style.display = "none")
+    .on("click", (event, d) => {
+      if (d.file) {
+        const url = `https://github.com/AndrewXuTurtle/openclaw-oneclick/blob/main/${d.file}`;
+        window.open(url, "_blank");
+      }
+    });
+
+  const label = node.append("text")
+    .attr("class", "nodetext")
+    .text(d => d.name.length > 18 ? d.name.slice(0,18)+"…" : d.name)
+    .style("display", labelsVisible ? "block" : "none");
+
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+}
+
+function showTooltip(event, d) {
+  tooltip.style.display = "block";
+  tooltip.style.left = (event.pageX + 12) + "px";
+  tooltip.style.top = (event.pageY - 12) + "px";
+  let html = `<div class="tip-name">${d.name}</div>`;
+  if (d.file) html += `<div class="tip-meta">${d.file}</div>`;
+  if (d.entities) {
+    const all = [
+      ...(d.entities.person || []),
+      ...(d.entities.project || []),
+    ].slice(0, 5);
+    if (all.length) {
+      html += `<div class="tip-entities">`;
+      all.forEach(e => html += `<span class="tag">${e}</span>`);
+      html += `</div>`;
+    }
+  }
+  tooltip.innerHTML = html;
+}
+
+function zoomIn() { svg.transition().duration(300).call(zoom.scaleBy, 1.4); }
+function zoomOut() { svg.transition().duration(300).call(zoom.scaleBy, 0.7); }
+function resetZoom() { svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity); }
+
+function toggleLabels() {
+  labelsVisible = !labelsVisible;
+  g.selectAll(".nodetext").style("display", labelsVisible ? "block" : "none");
+}
+
+function focusPeople() {
+  const people = nodes.filter(n => n.type === "person");
+  if (!people.length) return;
+  const cx = d3.mean(people, d => d.x);
+  const cy = d3.mean(people, d => d.y);
+  svg.transition().duration(500).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(w/2 - cx, h/2 - cy).scale(1.5)
+  );
+}
+
+function focusProjects() {
+  const projs = nodes.filter(n => n.type === "project");
+  if (!projs.length) return;
+  const cx = d3.mean(projs, d => d.x);
+  const cy = d3.mean(projs, d => d.y);
+  svg.transition().duration(500).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(w/2 - cx, h/2 - cy).scale(1.5)
+  );
+}
+</script>
+</body>
+</html>
